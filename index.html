@@ -28,19 +28,23 @@ img {
 }
 
 header {
-  padding: 0;
+  padding: 40px;
   text-align: center;
   font-family:  Arial,Helvetica,sans-serif;  font-size: 18px; font-weight: bold; line-height: 18px; 
  }
 
-/* Style the list inside the menu */
+nav {
+  float: left;
+  width: 20%;
+  padding: 20px;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
   font-family: Arial,Helvetica,sans-serif; font-size: 14px; font-weight:normal; line-height: 18px; 
 }
 
-/* Style the content */
 aside {
   -webkit-flex: 3;
   -ms-flex: 3;
@@ -49,7 +53,13 @@ aside {
   font-family: Arial,Helvetica,sans-serif; font-size: 14px; font-weight:normal; line-height: 16px; 
   background-image: linear-gradient(to right, rgb(10,10,10), rgb(40,40,40)); 
 }
-  
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Style the footer */
 footer {
   padding: 0;
@@ -67,7 +77,7 @@ font-family:  Arial,Helvetica,sans-serif;  font-size: 20px; font-weight: bold; l
 } 
   
 h3 { 
-font-family: Arial,Helvetica,sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; 
+font-family: Arial,Helvetica,sans-serif; font-size: 16px; font-weight: bold; line-height: 18px; 
 } 
 
 </style>
