@@ -4,9 +4,11 @@
 <head>
 
 <meta charset="utf-8">
-
 <meta name="description" content= "Resume of Stefano Marchi - Systems Engineer and System Architect">
 <meta name="keywords" content= "Safety by Design, Systems Engineer, INCOSE, A-SPICE, ISO-26262, ISO-21434">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <title> Stefano Marchi - Systems Engineer </title>
 
@@ -16,22 +18,56 @@ img {
   width: 100%; 
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(10, 10, 10);
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(200, 200, 200);
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-image: linear-gradient(to right, rgb(10,10,10), rgb(50,50,50)); 
+  padding: 10px;
+}
+/* Style the footer */
+footer {
+  background-color: rgb(10, 10, 10);
+  padding: 10px;
+  color: rgb(200, 200, 200);
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+ }
+
 h2 { 
 font-family:  Arial,Helvetica,sans-serif;  font-size: 20px; font-weight: bold; line-height: 20px; 
-color: rgb(200, 200, 200);
 } 
   
 h3 { 
 font-family: Arial,Helvetica,sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; 
-color: rgb(200, 200, 200);
 } 
 
 body { 
-background-color: rgb(10, 10, 10);
-background-image: linear-gradient(to right, rgb(10,10,10), rgb(50,50,50)); 
-
 font-family: Arial,Helvetica,sans-serif; font-size: 14px; font-weight:normal; line-height: 16px; 
-color: rgb(200, 200, 200);
 } 
 
 #Vision {
@@ -44,8 +80,22 @@ color: rgb(200, 200, 200);
 
 <body>
 
-
+<header>
+<h2>Stefano Marchi</h2>
 <img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:128px">
+</header>
+
+<section>
+<nav>
+<ul>
+<li><a href="#">KeyCapabilities</a></li>
+<li><a href="#">Vision</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">Experience</a></li>
+<li><a href="#">Highlights</a></li>
+</ul>
+</nav>
+<article>
 
 
 <h2> Key Capabilities </h2>
@@ -101,15 +151,19 @@ color: rgb(200, 200, 200);
 <li> Designed system and software interfaces  </li> 
 </ul>
 
-<h2> Links </h2>
-                   
+</article>
+</section>   
 
+<footer>
+<h2> Links </h2>
 <p> 
 <a href="https://www.linkedin.com/in/stefanomarchi" target="_blank"> LinkedIn  </a> <br>
 <a href="https://www.xing.com/profile/Stefano_Marchi6/cv" target="_blank"> Xing  </a> <br>
 <a href="https://www.researchgate.net/profile/Stefano_Marchi" target="_blank"> ResearchGate </a> <br>
 <a href="mailto:stefano.marchi.i@gmail.com">  Email </a> 
 </p> 
-  
+                   
+
+
 </body>
 </html>
