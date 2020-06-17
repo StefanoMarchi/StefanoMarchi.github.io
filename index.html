@@ -14,31 +14,32 @@
 
 <style>
 
-
+/* define text style for all texts */
 * {   
-  color: rgb(200, 200, 200);
   font-family: Arial,Helvetica,sans-serif; 
-  font-size: 14px; 
+  font-size: 16px; 
   font-weight:normal; 
   line-height: 22px;
-}
+  color: rgb(200, 200, 200);
+ }
 
+/* except for titles */
 h2 {   
 font-size: 20px; 
 font-weight: bold; 
 line-height: 18px; 
 } 
   
-
+/* list style */
 * ul {
  list-style-type: none;
 }
 
-
+/* define block style */
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   box-sizing: border-box;
   background-color: rgb(10, 10, 10);
 }
@@ -94,17 +95,17 @@ line-height: 18px;
   display: table;
 }
 
+/* Syle header and footer */
 header {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
-  font-size: 18px; 
-  font-weight: bold; 
- }
-
+}
 
 footer {
 }
+
+/* icons */
 
 .icon-bar {
   position: fixed;
@@ -185,10 +186,7 @@ onmouseover="lookUp(event,'Pics')"></button>
 <li> Expertise in supporting processes improvement and software maturity </li>
 <li> Knowledge of system and software engineering reference models, standards and norms </li>        
 </ul>
-<img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:128px">
-
 </div>
-
 
 
 <div id="Vision" class="tabcontent"> 
@@ -247,7 +245,6 @@ class="email"><i class="fa fa-envelope"></i></a>
 </div>
 
 <div class="clearfix"></div>
-
 
 <script>
 function lookUp(evt, tab) {
