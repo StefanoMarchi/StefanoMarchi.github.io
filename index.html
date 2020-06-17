@@ -14,12 +14,13 @@
 
 <style>
 
+
 * {   
   color: rgb(200, 200, 200);
   font-family: Arial,Helvetica,sans-serif; 
   font-size: 14px; 
   font-weight:normal; 
-  line-height: 20px;
+  line-height: 22px;
 }
 
 h2 {   
@@ -28,11 +29,6 @@ font-weight: bold;
 line-height: 18px; 
 } 
   
-h3 {  
-font-size: 16px; 
-font-weight: bold; 
-line-height: 18px; 
-} 
 
 * ul {
  list-style-type: none;
@@ -51,8 +47,8 @@ line-height: 18px;
 .tab {
   float: left;
   border: 1px solid #ccc;
-  width: 30%;
-  height: 700px;
+  width: 25%;
+  height: 600px;
 }
 
 /* Style the buttons inside the tab */
@@ -65,9 +61,8 @@ line-height: 18px;
   outline: none;
   text-align: left;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 18px;
 }
-
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -86,7 +81,7 @@ line-height: 18px;
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
-  width: 70%;
+  width: 75%;
   border-left: none;
   height: 300px;
   display: none;
@@ -100,6 +95,7 @@ line-height: 18px;
 }
 
 header {
+  border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
   font-size: 18px; 
@@ -108,6 +104,42 @@ header {
 
 
 footer {
+}
+
+.icon-bar {
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(10,10,10);
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.xing {
+  background: rgb(190,255,100);
+  color: white;
+}
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+.email {
+  background: rgb(225,50,35);
+  color: white;
 }
 
 
@@ -123,24 +155,22 @@ footer {
 </header>
 
 <div class="tab">
-  <button class="tablinks"       onmouseover="openCity(event,'KeyCapabilities')">KeyCapabilities</button>
+  <button class="tablinks"       onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
   <button class="tablinks" 
-  onmouseover="openCity(event, 'Vision')">Vision</button>  
+  onmouseover="lookUp(event, 'Vision')">Vision</button>  
   <button class="tablinks" 
-  onmouseover="openCity(event, 'Skills')">Skills</button>
+  onmouseover="lookUp(event, 'Skills')">Skills</button>
   <button class="tablinks" 
-  onmouseover="openCity(event, 'Experience')">Experience</button>
+  onmouseover="lookUp(event, 'Experience')">Experience</button>
   <button class="tablinks" 
-  onmouseover="openCity(event, 'Highlights')">Highlights</button>
+  onmouseover="lookUp(event, 'Highlights')">Highlights</button>
+  <button class="tablinks" 
+  onmouseover="lookUp(event, 'Links')">Links</button>
 </div>
 
 
 <div id="KeyCapabilities" class="tabcontent" >
 
-<img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:128px">
-
-
-<h2> Key Capabilities </h2>
 <ul>
 <li> Expertise in systems engineering and requirements management </li>
 <li> Ability to design system, hardware and software interfaces </li>
@@ -148,16 +178,17 @@ footer {
 <li> Expertise in supporting processes improvement and software maturity </li>
 <li> Knowledge of system and software engineering reference models, standards and norms </li>        
 </ul>
+<img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:128px">
+
 </div>
 
 
+
 <div id="Vision" class="tabcontent"> 
-<h2> Vision </h2>  
 <q><em>System engineering is a robust approach to the design, creation, and operation of systems. In simple terms, the approach consists of identification and quantification of system goals, creation of alternative system design concepts, performance of design trades, selection and implementation of the best design, verification that the design is properly built and integrated, and post-implementation assessment of how well the system meets the goals.</em></q>
 </div>
 
 <div id="Skills" class="tabcontent"> 
-<h2> Skills </h2>
 <ul> 
 <li> model based systems engineering (MBSE) </li>
 <li> system theoretic process analysis (STPA)</li>
@@ -172,7 +203,6 @@ footer {
 </div>
 
 <div id="Experience" class="tabcontent"> 
-<h2> Experience </h2>
 <ul> 
 <li> 5+ years in managing projects and direct reports </li>
 <li> 10+ years in research and development </li>
@@ -182,7 +212,6 @@ footer {
 
 
 <div id="Highlights" class="tabcontent">
-<h2> Project highlights </h2>
 <ul>
 <li> System engineer and software architect for vehicle systems and control units (ASIL-B/C) </li> 
 <li> Design of the safety concept and derivation of the safety and software requirements for a hybrid electric vehicle, with focus on failure propagation modelling </li> 
@@ -196,10 +225,25 @@ footer {
 </ul>
 </div>
 
+
+<div id="Links" class="tabcontent">
+
+
+<div class="icon-bar">
+  <a href="https://www.linkedin.com/in/stefanomarchi" target="_blank" 
+class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.xing.com/profile/Stefano_Marchi6/cv" target="_blank" class="xing"><i class="fa fa-xing"></i></a> 
+  <a href="https://www.researchgate.net/profile/Stefano_Marchi" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="mailto:stefano.marchi.i@gmail.com" target="_blank" 
+class="email"><i class="fa fa-envelope"></i></a> 
+</div>
+</div>
+
 <div class="clearfix"></div>
 
+
 <script>
-function openCity(evt, cityName) {
+function lookUp(evt, tab) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -209,22 +253,11 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tab).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
    
-
-
-<footer>
-<h2> Links </h2>
-<p> 
-<a href="https://www.linkedin.com/in/stefanomarchi" target="_blank"> LinkedIn  </a> <br>
-<a href="https://www.xing.com/profile/Stefano_Marchi6/cv" target="_blank"> Xing  </a> <br>
-<a href="https://www.researchgate.net/profile/Stefano_Marchi" target="_blank"> ResearchGate </a> <br>
-<a href="mailto:stefano.marchi.i@gmail.com">  Email </a> 
-</p> 
-                   
-
+                
 </body>
 </html>
