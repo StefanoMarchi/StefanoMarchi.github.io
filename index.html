@@ -44,7 +44,7 @@ ul {
   line-height: 24px;
 }
 
-/* define block style */
+/* define block style 
 * {
   margin: 0;
   padding: 0;
@@ -53,12 +53,11 @@ ul {
   box-sizing: border-box;
   background-color: rgb(10, 10, 10);
 }
-  
+  */
 
 /* Style the tab */
 .tab {
   float: left;
-  width: 25%;
   border: 1px solid rgb(200, 200, 200);
   height: 760px;
 }
@@ -66,7 +65,6 @@ ul {
 /* Style the tab content */
 .tabcontent {
   float: left;
-  width: 75%;
   border: 1px solid rgb(200, 200, 200);
   border-left: none;
   display: none;
@@ -103,17 +101,6 @@ ul {
   display: table;
 }
 
-/* Syle header and footer */
-header {
-  padding: 12px;
-  text-align: center;
-}
-
-footer {
-  border: 1px solid rgb(200,200,200);
-  text-align: center;
-}
-
 
 </style>
 </head>
@@ -122,12 +109,12 @@ footer {
 <!-- Body-->
 
 <!-- Header -->
-<header>
+<div class="w3-container w3-black w3-center">
 <h2>Stefano Marchi</h2>
-</header>
-
+</div>
 
 <!-- Navigation bar-->
+<div class="w3-sidebar w3-black w3-bar-block" style="width:25%">
 <div class="tab">
   <button class="tablinks" onmouseover="lookUp(event,'Presentation')">Presentation</button>
   <button class="tablinks" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
@@ -138,6 +125,19 @@ footer {
   <button class="tablinks" onmouseover="lookUp(event,'Education')">Education</button>
   <button class="tablinks" onmouseover="lookUp(event,'Highlights')">Highlights</button>
 </div>
+</div>
+
+<!-- Navigation bar
+<div class="w3-sidebar w3-black w3-bar-block" style="width:25%">
+  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Presentation')">Presentation</button>
+  <button cclass="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
+  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Vision')">Vision</button>  
+  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Skills')">Skills</button>
+  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Languages')">Languages</button>
+  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Experience')">Experience</button>
+  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Education')">Education</button>
+  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Highlights')">Highlights</button>
+</div>-->
 
 <script>
 function lookUp(evt, tab) {
@@ -169,12 +169,15 @@ function lookUp(evt, tab) {
 </div>-->
 
 
-
 <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px margin-left:25%">
+<div class="w3-container w3-black " >
+<div style="margin-left:25%">
+<div style="max-width:1400px"> 
+<div style="height:750px"> 
+
 
 <!-- Picture -->
-<div id="Presentation" class="tabcontent" >
+<div id="Presentation" class="w3-container w3-black tabcontent" >
 
 <img src="MarchiStefano_Bewerbungsphoto.jpg" 
   onmouseover="unblur(this)" 
@@ -194,7 +197,7 @@ function unblur(x) {
 
 
 <!-- KeyCapabilities -->
-<div id="KeyCapabilities" class="tabcontent" >
+<div id="KeyCapabilities" class="w3-container tabcontent w3-card-4" >
 
 <ul>
 <li> Expertise in systems engineering and requirements management </li>
@@ -207,17 +210,15 @@ function unblur(x) {
 
 
 <!-- Vision -->
-<div id="Vision" class="tabcontent"> 
+<div id="Vision" class="w3-container w3-black tabcontent w3-card-4"> 
 
 <q><em>System engineering is a robust approach to the design, creation, and operation of systems. In simple terms, the approach consists of identification and quantification of system goals, creation of alternative system design concepts, performance of design trades, selection and implementation of the best design, verification that the design is properly built and integrated, and post-implementation assessment of how well the system meets the goals.</em></q>
 </div>
 
 
 <!-- Skills -->
-<div id="Skills" class="tabcontent"> 
-<div class="w3-white w3-text-grey w3-card-4">
-<div class="w3-container">
-	<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+<div id="Skills" class="w3-container w3-black tabcontent w3-card-4">
+<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
   <br>  
   <p>Requirements engineering and traceability (A-SPICE)</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -261,17 +262,12 @@ function unblur(x) {
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
   </div>
-  
-<br>
-</div>
-</div>
+ 
 </div>
 
 
 <!-- Languages -->
-<div id="Languages" class="tabcontent"> 
-<div class="w3-white w3-text-grey w3-card-4">
-<div class="w3-container">
+<div id="Languages" class="w3-container w3-black tabcontent w3-card-4">
 
   <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">  </i>Languages</b></p>
   <br>  
@@ -306,13 +302,9 @@ function unblur(x) {
   </div>
 
 </div>
-</div>
-</div>
 
 <!-- Experience -->
-<div id="Experience" class="tabcontent"> 
-<div class="w3-white w3-text-grey w3-card-4">
-<div class="w3-container">
+<div id="Experience" class="w3-container w3-black tabcontent w3-card-4">
 
   <h2 class="w3-text-grey w3-padding-10"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
 
@@ -335,13 +327,9 @@ function unblur(x) {
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
 
 </div>
-</div>
-</div>
 
 <!-- Education -->
-<div id="Education" class="tabcontent"> 
-<div class="w3-white w3-text-grey w3-card-4">
-<div class="w3-container">
+<div id="Education" class="w3-container w3-black tabcontent w3-card-4"> 
 
   <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
   </div>
@@ -363,12 +351,9 @@ function unblur(x) {
   <p>Master Degree - Electrical Engineering</p><br>
 
 </div>
-</div>
-</div>
-
 
 <!-- Highlights -->
-<div id="Highlights" class="tabcontent">
+<div id="Highlights" class="w3-container w3-black tabcontent w3-card-4">
 
   <ul> 
     <li> 5+ years in managing projects and direct reports </li>
@@ -421,26 +406,22 @@ Deployed statistical methods for data discovery and introduced performance and a
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<div class="w3-container w3-teal w3-center w3-margin-top">
 
 <p class="w3-teal">Find me on social media </p>
 
 <a href="https://stefanomarchi.github.io">
 <i class="w3-teal fa fa-home"></i></a> 
-
 <a href="https://www.linkedin.com/in/stefanomarchi" target="_blank">
  <i class="w3-teal fa-linkedin w3-hover-opacity"></i></a>
-
 <a href="https://www.xing.com/profile/Stefano_Marchi6/cv" target="_blank" >
 <i class="w3-teal fa fa-xing w3-hover-opacity"></i></a> 
-
 <a href="https://www.researchgate.net/profile/Stefano_Marchi" target="_blank" >
 <i class="w3-teal fa fa-facebook-official w3-hover-opacity"></i></a> 
-
 <a href="mailto:stefano.marchi.i@gmail.com" target="_blank">
 <i class="w3-teal fa fa-envelope"></i></a> 
   
-</footer>
+</div>
 
 <div class="clearfix"></div>
                 
