@@ -16,16 +16,12 @@
 <style>
 
 /* define style for images*/
-.bg-image {
-  
-  background-image: url("MarchiStefano_Bewerbungsphoto.jpg");
-  background-position: center;
+img {
   max-width: 100%;
   height: auto;
  
-  /* Add the blur effect */
   filter: blur(8px);
-  -webkit-filter: blur(8px);
+
 }   
 
 /* define text style for all texts */
@@ -195,7 +191,8 @@ footer {
 
 </div>
 <div class="tab">
-  <button class="tablinks" onmouseover="lookUp(event,'Pics')"></button>
+  <button class="tablinks" 
+  onmouseover="lookUp(event,'Pics')"></button>
  <button class="tablinks"  onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
   <button class="tablinks" onmouseover="lookUp(event,'Vision')">Vision</button>  
   <button class="tablinks" onmouseover="lookUp(event,'Skills')">Skills</button>
@@ -204,8 +201,15 @@ footer {
 </div>
 
 <div id="Pics" class="tabcontent" >
-   <div class="bg-image"></div>
+   <img src="img_chania.jpg" width="460" height="345" >
+
+/* background-image: url("MarchiStefano_Bewerbungsphoto.jpg"); */
+
 </div>
+
+
+
+
 
 <div id="KeyCapabilities" class="tabcontent" >
 
@@ -283,3 +287,4 @@ function lookUp(evt, tab) {
                 
 </body>
 </html>
+
