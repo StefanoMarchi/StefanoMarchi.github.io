@@ -53,7 +53,7 @@ ul {
   box-sizing: border-box;
   background-color: rgb(10, 10, 10);
 }
-  */
+
 
 /* Style the tab */
 .tab {
@@ -101,6 +101,8 @@ ul {
   display: table;
 }
 
+ 
+
 
 </style>
 </head>
@@ -129,15 +131,16 @@ ul {
 
 <!-- Navigation bar
 <div class="w3-sidebar w3-black w3-bar-block" style="width:25%">
-  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Presentation')">Presentation</button>
-  <button cclass="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
-  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Vision')">Vision</button>  
-  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Skills')">Skills</button>
-  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Languages')">Languages</button>
-  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Experience')">Experience</button>
-  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Education')">Education</button>
-  <button class="w3-bar-item w3-button w3-padding-26" onmouseover="lookUp(event,'Highlights')">Highlights</button>
-</div>-->
+  <a href="Presentation" class="w3-bar-item w3-button" onmouseover="lookUp(event,'Presentation')">Presentation</a>
+  <a href="KeyCapabilities" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">KeyCapabilities</a>
+  <a href="Vision" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">Vision</a>
+  <a href="Skills" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">Skills</a>
+  <a href="Languages" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">Language</a>
+  <a href="Experience" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">Experience</a>
+  <a href="Eductation" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">Education</a>
+  <a href="Highlights" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">Highlights</a>
+</div>
+-->
 
 <script>
 function lookUp(evt, tab) {
@@ -156,18 +159,6 @@ function lookUp(evt, tab) {
 </script>
 
 
-<!-- Sidebar 
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
-  <a href="Presentation" class="w3-bar-item w3-button w3-padding-26">Presentation</a>
-  <a href="KeyCapabilities" class="w3-bar-item w3-button w3-padding-26">KeyCapabilities</a>
-  <a href="Vision" class="w3-bar-item w3-button w3-padding-26">Vision</a>
-  <a href="Skills" class="w3-bar-item w3-button w3-padding-26">Skills</a>
-  <a href="Languages" class="w3-bar-item w3-button w3-padding-26">Language</a>
-  <a href="Experience" class="w3-bar-item w3-button w3-padding-26">Experience</a>
-  <a href="Eductation" class="w3-bar-item w3-button w3-padding-26">Education</a>
-  <a href="Highlights" class="w3-bar-item w3-button w3-padding-26">Highlights</a>
-</div>-->
-
 
 <!-- Page Container -->
 <div class="w3-container w3-black " >
@@ -177,7 +168,7 @@ function lookUp(evt, tab) {
 
 
 <!-- Picture -->
-<div id="Presentation" class="w3-container w3-black tabcontent" >
+<div id="Presentation" class="w3-container w3-black w3-card-4 tabcontent">
 
 <img src="MarchiStefano_Bewerbungsphoto.jpg" 
   onmouseover="unblur(this)" 
@@ -197,7 +188,7 @@ function unblur(x) {
 
 
 <!-- KeyCapabilities -->
-<div id="KeyCapabilities" class="w3-container tabcontent w3-card-4" >
+<div id="KeyCapabilities" class="w3-container w3-black w3-card-4 tabcontent">
 
 <ul>
 <li> Expertise in systems engineering and requirements management </li>
@@ -210,14 +201,14 @@ function unblur(x) {
 
 
 <!-- Vision -->
-<div id="Vision" class="w3-container w3-black tabcontent w3-card-4"> 
+<div id="Vision" class="w3-container w3-black w3-card-4 tabcontent">
 
 <q><em>System engineering is a robust approach to the design, creation, and operation of systems. In simple terms, the approach consists of identification and quantification of system goals, creation of alternative system design concepts, performance of design trades, selection and implementation of the best design, verification that the design is properly built and integrated, and post-implementation assessment of how well the system meets the goals.</em></q>
 </div>
 
 
 <!-- Skills -->
-<div id="Skills" class="w3-container w3-black tabcontent w3-card-4">
+<div id="Skills" class="w3-container w3-black w3-card-4 tabcontent">
 <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
   <br>  
   <p>Requirements engineering and traceability (A-SPICE)</p>
@@ -267,7 +258,7 @@ function unblur(x) {
 
 
 <!-- Languages -->
-<div id="Languages" class="w3-container w3-black tabcontent w3-card-4">
+<div id="Languages" class="w3-container w3-black w3-card-4 tabcontent">
 
   <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">  </i>Languages</b></p>
   <br>  
@@ -304,7 +295,7 @@ function unblur(x) {
 </div>
 
 <!-- Experience -->
-<div id="Experience" class="w3-container w3-black tabcontent w3-card-4">
+<div id="Experience" class="w3-container w3-black w3-card-4 tabcontent">
 
   <h2 class="w3-text-grey w3-padding-10"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
 
@@ -329,7 +320,7 @@ function unblur(x) {
 </div>
 
 <!-- Education -->
-<div id="Education" class="w3-container w3-black tabcontent w3-card-4"> 
+<div id="Education" class="w3-container w3-black w3-card-4 tabcontent">
 
   <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
   </div>
@@ -353,7 +344,7 @@ function unblur(x) {
 </div>
 
 <!-- Highlights -->
-<div id="Highlights" class="w3-container w3-black tabcontent w3-card-4">
+<div id="Highlights" class="w3-container w3-black w3-card-4 tabcontent">
 
   <ul> 
     <li> 5+ years in managing projects and direct reports </li>
@@ -423,7 +414,7 @@ Deployed statistical methods for data discovery and introduced performance and a
   
 </div>
 
-<div class="clearfix"></div>
-                
+<div class="clearfix"></div>                
+
 </body>
 </html>
