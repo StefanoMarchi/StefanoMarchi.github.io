@@ -48,8 +48,8 @@ ul {
 * {
   margin: 0;
   padding: 0;
-  border: none;
-  outline: none;
+  border: 0;
+  outline: 0;
   box-sizing: border-box;
   background-color: rgb(10, 10, 10);
 }
@@ -70,8 +70,6 @@ ul {
   border: 1px solid rgb(200, 200, 200);
   border-left: none;
   height: 700px;
- 
-  padding: 22px 26px;
   display: none;
 }
 /* Style the buttons inside the tab */
@@ -99,7 +97,6 @@ ul {
   color:rgb(10, 10, 10)
 }
 
-
 /* Clear floats after the tab */
 .clearfix::after {
   content: "";
@@ -109,12 +106,13 @@ ul {
 
 /* Syle header and footer */
 header {
-  border: 1px solid rgb(200,200,200);
   padding: 12px;
   text-align: center;
 }
 
 footer {
+  border: 1px solid rgb(200,200,200);
+  text-align: center;
 }
 
 
@@ -130,14 +128,10 @@ footer {
 </header>
 
 
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-<!-- Navigation bar -->
+<!-- Navigation bar-->
 </div>
 <div class="tab">
-  <button class="tablinks" onmouseover="lookUp(event,'Pics')">Presentation</button>
+  <button class="tablinks" onmouseover="lookUp(event,'Presentation')">Presentation</button>
   <button class="tablinks" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
   <button class="tablinks" onmouseover="lookUp(event,'Vision')">Vision</button>  
   <button class="tablinks" onmouseover="lookUp(event,'Skills')">Skills</button>
@@ -162,10 +156,30 @@ function lookUp(evt, tab) {
   evt.currentTarget.className += " active";
 }
 </script>
-   
+
+
+<!-- Sidebar 
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <a href="Presentation" class="w3-bar-item w3-button w3-padding-26">Presentation</a>
+  <a href="KeyCapabilities" class="w3-bar-item w3-button w3-padding-26">KeyCapabilities</a>
+  <a href="Vision" class="w3-bar-item w3-button w3-padding-26">Vision</a>
+  <a href="Skills" class="w3-bar-item w3-button w3-padding-26">Skills</a>
+  <a href="Languages" class="w3-bar-item w3-button w3-padding-26">Language</a>
+  <a href="Experience" class="w3-bar-item w3-button w3-padding-26">Experience</a>
+  <a href="Eductation" class="w3-bar-item w3-button w3-padding-26">Education</a>
+  <a href="Highlights" class="w3-bar-item w3-button w3-padding-26">Highlights</a>
+</div>-->
+
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+<div style="margin-left:25%">
+
 
 <!-- Picture -->
-<div id="Pics" class="tabcontent" >
+<div id="Presentation" class="tabcontent" >
 
 <img src="MarchiStefano_Bewerbungsphoto.jpg" 
   onmouseover="unblur(this)" 
