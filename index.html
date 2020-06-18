@@ -19,10 +19,8 @@
 img {
   max-width: 100%;
   height: auto;
- 
   filter: blur(8px);
-
-}   
+} 
 
 /* define text style for all texts */
 * {   
@@ -200,14 +198,39 @@ footer {
   <button class="tablinks" onmouseover="lookUp(event,'Highlights')">Highlights</button>
 </div>
 
+
+<script>
+function lookUp(evt, tab) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+
 <div id="Pics" class="tabcontent" >
-   <img src="img_chania.jpg" width="460" height="345" >
 
-/* background-image: url("MarchiStefano_Bewerbungsphoto.jpg"); */
 
+<img src="MarchiStefano_Bewerbungsphoto.jpg" 
+  onmouseover="unblur(this)" onmouseout="blur(this)" >
 </div>
 
-
+<script>
+function blur(x) {
+  x.style.filter = "blur(8px)";
+}
+function unblur(x) {
+  x.style.filter = "blur(0px)";
+}   
+</script>
 
 
 
@@ -265,26 +288,9 @@ footer {
 </div>
 
 
-
 <div class="clearfix"></div>
+ 
 
-<script>
-function lookUp(evt, tab) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tab).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
                 
 </body>
 </html>
-
