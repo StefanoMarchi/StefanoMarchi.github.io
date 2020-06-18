@@ -32,11 +32,10 @@ img {
   color: rgb(200, 200, 200);
  }
 
-/* except for titles */
-h2 {   
-font-size: 20px; 
-font-weight: bold; 
-} 
+h4 {
+   font-size: 22px;
+   font-type: bold;
+}
   
 /* list style */
 ul {
@@ -55,23 +54,23 @@ ul {
 }
 
 
-/* Style the tab */
+/* Style the tab
 .tab {
   float: left;
   border: 1px solid rgb(200, 200, 200);
   height: 760px;
 }
-
-/* Style the tab content */
+*/
+/* Style the tab content
 .tabcontent {
   float: left;
-  border: 1px solid rgb(200, 200, 200);
   border-left: none;
   display: none;
 }
-/* Style the buttons inside the tab */
+*
+/* Style the buttons inside the tab
 .tab button {
-  display: block; /* Make the links appear below each other instead of side-by-side */
+  display: block; 
   background-color: inherit;
   padding: 24px 16px;
   width: 100%;
@@ -81,42 +80,42 @@ ul {
   cursor: pointer;
   font-size: 18px;
 }
-
-/* Change background color of buttons on hover */
+*/
+/* Change background color of buttons on hover 
 .tab button:hover {
   background-color: rgb(200, 200, 200);
   color:rgb(10, 10, 10)
 }
-
-/* Create an active/current "tab button" class */
+*/
+/* Create an active/current "tab button" class 
 .tab button.active {
   background-color: rgb(200, 200, 200);
   color:rgb(10, 10, 10)
 }
-
-/* Clear floats after the tab */
+*/
+/* Clear floats after the tab 
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-
- 
+*/
 
 
 </style>
 </head>
   
-<body>
 <!-- Body-->
+<body class="w3-black">
 
 <!-- Header -->
-<div class="w3-container w3-black w3-center">
-<h2>Stefano Marchi</h2>
-</div>
+<header class="w3-container w3-black w3-center">
+  <h4>Stefano Marchi</h4>
+</header>
 
-<!-- Navigation bar-->
-<div class="w3-sidebar w3-black w3-bar-block" style="width:25%">
+
+<!-- Navigation bar
+<div class="w3-sidebar w3-black w3-bar-block w3-border" style="width:25%">
 <div class="tab">
   <button class="tablinks" onmouseover="lookUp(event,'Presentation')">Presentation</button>
   <button class="tablinks" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
@@ -127,9 +126,9 @@ ul {
   <button class="tablinks" onmouseover="lookUp(event,'Education')">Education</button>
   <button class="tablinks" onmouseover="lookUp(event,'Highlights')">Highlights</button>
 </div>
-</div>
+</div>-->
 
-<!-- Navigation bar
+<!-- Navigation bar-->
 <div class="w3-sidebar w3-black w3-bar-block" style="width:25%">
   <a href="Presentation" class="w3-bar-item w3-button" onmouseover="lookUp(event,'Presentation')">Presentation</a>
   <a href="KeyCapabilities" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">KeyCapabilities</a>
@@ -140,7 +139,7 @@ ul {
   <a href="Eductation" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">Education</a>
   <a href="Highlights" class="w3-bar-item w3-button w3-padding-26"onmouseover="lookUp(event,'Presentation')">Highlights</a>
 </div>
--->
+
 
 <script>
 function lookUp(evt, tab) {
@@ -159,22 +158,20 @@ function lookUp(evt, tab) {
 </script>
 
 
+<!-- Page Container <div style max-width:1400px height:750px"> -->
 
-<!-- Page Container -->
-<div class="w3-container w3-black " >
 <div style="margin-left:25%">
-<div style="max-width:1400px"> 
-<div style="height:750px"> 
+
+<div class="w3-content w3-border w3-margin-top" style="max-width:1400px">
+    
 
 
 <!-- Picture -->
-<div id="Presentation" class="w3-container w3-black w3-card-4 tabcontent">
+<div id="Presentation" class="w3-container w3-black  w3-margin-bottomtabcontent">
 
 <img src="MarchiStefano_Bewerbungsphoto.jpg" 
   onmouseover="unblur(this)" 
-  onmouseout="blur(this)" 
-  onchange="blur(this)"
->
+  onmouseout="blur(this)" >
 </div>
 
 <script>
@@ -188,28 +185,28 @@ function unblur(x) {
 
 
 <!-- KeyCapabilities -->
-<div id="KeyCapabilities" class="w3-container w3-black w3-card-4 tabcontent">
+<div id="KeyCapabilities" class="w3-container w3-black w3-border-bottom tabcontent">
 
-<ul>
-<li> Expertise in systems engineering and requirements management </li>
-<li> Ability to design system, hardware and software interfaces </li>
-<li> Experience in modelling systems, software and controls </li>
-<li> Expertise in supporting processes improvement and software maturity </li>
-<li> Knowledge of system and software engineering reference models, standards and norms </li>        
-</ul>
+  <ul>
+  <li> Expertise in systems engineering and requirements management </li>
+  <li> Ability to design system, hardware and software interfaces </li>
+  <li> Experience in modelling systems, software and controls </li>
+  <li> Expertise in supporting processes improvement and software maturity </li>
+  <li> Knowledge of system and software engineering reference models, standards and norms </li>        
+  </ul>
 </div>
 
 
 <!-- Vision -->
-<div id="Vision" class="w3-container w3-black w3-card-4 tabcontent">
+<div id="Vision" class="w3-container w3-black w3-card-4 w3-border-bottom tabcontent">
 
-<q><em>System engineering is a robust approach to the design, creation, and operation of systems. In simple terms, the approach consists of identification and quantification of system goals, creation of alternative system design concepts, performance of design trades, selection and implementation of the best design, verification that the design is properly built and integrated, and post-implementation assessment of how well the system meets the goals.</em></q>
+  <q><em>System engineering is a robust approach to the design, creation, and operation of systems. In simple terms, the approach consists of identification and quantification of system goals, creation of alternative system design concepts, performance of design trades, selection and implementation of the best design, verification that the design is properly built and integrated, and post-implementation assessment of how well the system meets the goals.</em></q>
 </div>
 
 
 <!-- Skills -->
-<div id="Skills" class="w3-container w3-black w3-card-4 tabcontent">
-<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+<div id="Skills" class="w3-container w3-black w3-border-bottom tabcontent">
+  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
   <br>  
   <p>Requirements engineering and traceability (A-SPICE)</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -258,7 +255,7 @@ function unblur(x) {
 
 
 <!-- Languages -->
-<div id="Languages" class="w3-container w3-black w3-card-4 tabcontent">
+<div id="Languages" class="w3-container w3-black w3-border-bottom tabcontent">
 
   <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">  </i>Languages</b></p>
   <br>  
@@ -295,7 +292,7 @@ function unblur(x) {
 </div>
 
 <!-- Experience -->
-<div id="Experience" class="w3-container w3-black w3-card-4 tabcontent">
+<div id="Experience" class="w3-container w3-black w3-border-bottom tabcontent">
 
   <h2 class="w3-text-grey w3-padding-10"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
 
@@ -320,7 +317,7 @@ function unblur(x) {
 </div>
 
 <!-- Education -->
-<div id="Education" class="w3-container w3-black w3-card-4 tabcontent">
+<div id="Education" class="w3-container w3-black w3-border-bottom tabcontent">
 
   <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
   </div>
@@ -344,16 +341,14 @@ function unblur(x) {
 </div>
 
 <!-- Highlights -->
-<div id="Highlights" class="w3-container w3-black w3-card-4 tabcontent">
+<div id="Highlights" class="w3-container w3-black w3-border-bottom tabcontent">
 
   <ul> 
     <li> 5+ years in managing projects and direct reports </li>
     <li> 10+ years in research and development </li>
     <li> 5+ years in systems engineering and consulting </li>
   </ul>
-
   <br>
-
   <ul>
     <li> System engineer and software architect for vehicle systems and control units (ASIL-B/C) </li> 
     <li> Design of the safety concept and derivation of the safety and software requirements for a hybrid electric vehicle, with focus on failure propagation modelling </li> 
@@ -365,56 +360,51 @@ function unblur(x) {
     <li> Elicited model-based requirements for actuators and controls  </li> 
     <li> Designed system and software interfaces  </li> 
   </ul>
-
-
-<p>
-<br>
-System engineer and software architect for vehicle systems and control units 
-<br>
-Developed a comprehensive hazard analysis for a hybrid recreational vehicle with reference to VDA and NHTSA recommendations for traction battery and regenerative braking systems, redefining assumptions for the specific use cases and mission profiles. Designed the safety concept with focus on error modelling and failure propagation (STPA) among system, hardware and software components, with detailed reverse engineering of the safety mechanisms of the subsystems. Designed the safety mechanisms for the hybrid control unit with focus on multipoint failures and diagnostic coverage requirements. 
-<br>
-Designed the software architecture for a gateway control unit, with focus on consistency and completeness at the external and internal interfaces, according to the INCOSE framework. Refined software requirements for AUTOSAR basis software services.
-<br>
-<br>
-System architect for fail-operational electrical distribution systems for hybrid vehicles.
-<br>
-Led a team for the design of zonal distribution system, with focus on reliability and availability. Researched redundancy and adaptive safety mechanism for achieving the dependability goals. Technology scouting for hybrid capacitors for energy buffering, smart switches, bidirectional converters and microcontrollers.
-<br>
-Research and coordination of multi-physics modelling, simulation and validation of battery management system for 48V distribution systems. 
-<br>
-Participation in a European research project for autonomous pods.
-<br>
-<br>
-Process re-engineering for the ECU programming and coding processes with special focus on software requirements and data architectures.
-<br>
-Design of software interfaces and data model for event logs for the ECU programming and coding for over 300 control unit types.
-<br>
-Deployed statistical methods for data discovery and introduced performance and availability metrics.
-</p>
+  <p>
+  <br>
+  System engineer and software architect for vehicle systems and control units 
+  <br>
+  Developed a comprehensive hazard analysis for a hybrid recreational vehicle with reference to VDA and NHTSA recommendations for traction battery and regenerative braking systems, redefining assumptions for the specific use cases and mission profiles. Designed the safety concept with focus on error modelling and failure propagation (STPA) among system, hardware and software components, with detailed reverse engineering of the safety mechanisms of the subsystems. Designed the safety mechanisms for the hybrid control unit with focus on multipoint failures and diagnostic coverage requirements. 
+  <br>
+  Designed the software architecture for a gateway control unit, with focus on consistency and completeness at the external and internal interfaces, according to the INCOSE framework. Refined software requirements for AUTOSAR basis software services.
+  <br>
+  <br>
+  System architect for fail-operational electrical distribution systems for hybrid vehicles.
+  <br>
+  Led a team for the design of zonal distribution system, with focus on reliability and availability. Researched redundancy and adaptive safety mechanism for achieving the dependability goals. Technology scouting for hybrid capacitors for energy buffering, smart switches, bidirectional converters and microcontrollers.
+  <br>
+  Research and coordination of multi-physics modelling, simulation and validation of battery management system for 48V distribution systems. 
+  <br>
+  Participation in a European research project for autonomous pods.
+  <br>
+  <br>
+  Process re-engineering for the ECU programming and coding processes with special focus on software requirements and data architectures.
+  <br>
+  Design of software interfaces and data model for event logs for the ECU programming and coding for over 300 control unit types.
+  <br>
+  Deployed statistical methods for data discovery and introduced performance and availability metrics.
+  </p>
 </div>
 
 <!-- End Page Container -->
 </div>
-
-<!-- Footer -->
-<div class="w3-container w3-teal w3-center w3-margin-top">
-
-<p class="w3-teal">Find me on social media </p>
-
-<a href="https://stefanomarchi.github.io">
-<i class="w3-teal fa fa-home"></i></a> 
-<a href="https://www.linkedin.com/in/stefanomarchi" target="_blank">
- <i class="w3-teal fa-linkedin w3-hover-opacity"></i></a>
-<a href="https://www.xing.com/profile/Stefano_Marchi6/cv" target="_blank" >
-<i class="w3-teal fa fa-xing w3-hover-opacity"></i></a> 
-<a href="https://www.researchgate.net/profile/Stefano_Marchi" target="_blank" >
-<i class="w3-teal fa fa-facebook-official w3-hover-opacity"></i></a> 
-<a href="mailto:stefano.marchi.i@gmail.com" target="_blank">
-<i class="w3-teal fa fa-envelope"></i></a> 
-  
 </div>
 
-<div class="clearfix"></div>                
+<!-- Footer -->
+<div footer="w3-container w3-teal w3-border-bottom w3-center">
+
+  <p class="w3-teal">Find me on social media </p>
+  <a href="https://stefanomarchi.github.io">
+  <i class="w3-teal fa fa-home"></i></a> 
+  <a href="https://www.linkedin.com/in/stefanomarchi" target="_blank">
+  <i class="w3-teal fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://www.xing.com/profile/Stefano_Marchi6/cv" target="_blank" >
+  <i class="w3-teal fa fa-xing w3-hover-opacity"></i></a> 
+  <a href="https://www.researchgate.net/profile/Stefano_Marchi" target="_blank" >
+  <i class="w3-teal fa fa-facebook-official w3-hover-opacity"></i></a> 
+  <a href="mailto:stefano.marchi.i@gmail.com" target="_blank">
+  <i class="w3-teal fa fa-envelope w3-hover-opacity"></i></a> 
+</div>              
 
 </body>
 </html>
