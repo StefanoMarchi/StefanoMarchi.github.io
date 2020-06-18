@@ -194,14 +194,24 @@ onmouseover="lookUp(event,'Pics')"></button>
   onmouseover="lookUp(event,'Experience')">Experience</button>
   <button class="tablinks" 
   onmouseover="lookUp(event,'Highlights')">Highlights</button>
-  <button class="tablinks" 
-  onmouseover="lookUp(event,'Links')">Links</button>
 </div>
 
 <div id="Pics" class="tabcontent" >
 
 <img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:512px">
 
+/* Add the blur effect */
+filter: blur(8px);
+-webkit-filter: blur(8px);
+
+/* Full height */
+height: 100%; 
+  
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ 
 </div>
 
 <div id="KeyCapabilities" class="tabcontent" >
@@ -256,8 +266,6 @@ onmouseover="lookUp(event,'Pics')"></button>
 <li> Designed system and software interfaces  </li> 
 </ul>
 </div>
-
-
 
 
 
