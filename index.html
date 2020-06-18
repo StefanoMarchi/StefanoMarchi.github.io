@@ -28,14 +28,13 @@
 h2 {   
 font-size: 20px; 
 font-weight: bold; 
-line-height: 18px; 
 } 
   
-/* list style 
-  ul {
-  list-style-type: none;  
+/* list style */
+ul {
+/* list-style-type: none;  */
+  line-height: 24px;
 }
-*/
 
 /* define block style */
 * {
@@ -167,7 +166,7 @@ footer {
   <i class="fa fa-home"></i></a> 
   
   <a class="linkedin"href="https://www.linkedin.com/in/stefanomarchi" target="_blank">
-<i class="fa fa-linkedin"></i></a>
+  <i class="fa fa-linkedin"></i></a>
 
   <a class="email" href="mailto:stefano.marchi.i@gmail.com" target="_blank">
   <i class="fa fa-envelope"></i></a> 
@@ -183,35 +182,24 @@ footer {
 
 </div>
 <div class="tab">
-  <button class="tablinks" 
-onmouseover="lookUp(event,'Pics')"></button>
- <button class="tablinks"       onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
-  <button class="tablinks" 
-  onmouseover="lookUp(event,'Vision')">Vision</button>  
-  <button class="tablinks" 
-  onmouseover="lookUp(event,'Skills')">Skills</button>
-  <button class="tablinks" 
-  onmouseover="lookUp(event,'Experience')">Experience</button>
-  <button class="tablinks" 
-  onmouseover="lookUp(event,'Highlights')">Highlights</button>
+  <button class="tablinks" onmouseover="lookUp(event,'Pics')"></button>
+ <button class="tablinks"  onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
+  <button class="tablinks" onmouseover="lookUp(event,'Vision')">Vision</button>  
+  <button class="tablinks" onmouseover="lookUp(event,'Skills')">Skills</button>
+  <button class="tablinks" onmouseover="lookUp(event,'Experience')">Experience</button>
+  <button class="tablinks" onmouseover="lookUp(event,'Highlights')">Highlights</button>
 </div>
 
 <div id="Pics" class="tabcontent" >
 
-<img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:512px">
+<img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:512px">;
+height: 700px;
+position: center;
 
 /* Add the blur effect */
 filter: blur(8px);
 -webkit-filter: blur(8px);
-
-/* Full height */
-height: 100%; 
-  
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
- 
+   
 </div>
 
 <div id="KeyCapabilities" class="tabcontent" >
