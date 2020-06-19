@@ -1,435 +1,34 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-<head>
+<title> Stefano Marchi - Systems Engineer </title>
 
-  <meta charset="utf-8">
-  <meta name="description" content= "Resume of Stefano Marchi - Systems Engineer and System Architect">
-  <meta name="keywords" content= "Safety by Design, Systems Engineer, INCOSE, A-SPICE, ISO-26262, ISO-21434">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content= "Resume of Stefano Marchi - Systems Engineer and System Architect">
+<meta name="keywords" content= "Safety by Design, Systems Engineer, INCOSE, A-SPICE, ISO-26262, ISO-21434">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title> Stefano Marchi - Systems Engineer </title>
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-/* CSS instructions */
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
-/* define style for images*/
 img {
   max-width: 100%;
   height: 650px;
   filter: blur(8px);
 } 
 
-/* define text style for all texts */
-* {   
-  font-family: Arial,Helvetica,sans-serif; 
-  font-size: 16px; 
-  font-weight:normal; 
-  line-height: 22px;
-  color: rgb(200, 200, 200);
- }
-
-h4 {
-   font-size: 22px;
-   font-type: bold;
-}
-  
-/* list style */
-ul {
-/* list-style-type: none;  */
-  line-height: 24px;
-}
-
-/* define block style 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  background-color: rgb(10, 10, 10);
-}
-
-
-/* Style the tab
-.tab {
-  float: left;
-  border: 1px solid rgb(200, 200, 200);
-  height: 760px;
-}
-*/
-/* Style the tab content
-.tabcontent {
-  float: left;
-  border-left: none;
-  display: none;
-}
-*
-/* Style the buttons inside the tab
-.tab button {
-  display: block; 
-  background-color: inherit;
-  padding: 24px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 18px;
-}
-*/
-/* Change background color of buttons on hover 
-.tab button:hover {
-  background-color: rgb(200, 200, 200);
-  color:rgb(10, 10, 10)
-}
-*/
-/* Create an active/current "tab button" class 
-.tab button.active {
-  background-color: rgb(200, 200, 200);
-  color:rgb(10, 10, 10)
-}
-*/
-
+/*
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
-}
-
-
+}*/
 
 </style>
-</head>
-  
-<!-- Body-->
 <body class="w3-black">
-
-<!-- Header -->
-<header class="w3-container w3-black w3-center">
-  <h4>Stefano Marchi</h4>
-</header>
-
-
-<!-- Navigation bar
-<div class="w3-sidebar w3-black w3-bar-block w3-border" style="width:25%">
-<div class="tab">
-  <button class="tablinks" onmouseover="lookUp(event,'Presentation')">Presentation</button>
-  <button class="tablinks" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
-  <button class="tablinks" onmouseover="lookUp(event,'Vision')">Vision</button>  
-  <button class="tablinks" onmouseover="lookUp(event,'Skills')">Skills</button>
-  <button class="tablinks" onmouseover="lookUp(event,'Languages')">Languages</button>
-  <button class="tablinks" onmouseover="lookUp(event,'Experience')">Experience</button>
-  <button class="tablinks" onmouseover="lookUp(event,'Education')">Education</button>
-  <button class="tablinks" onmouseover="lookUp(event,'Highlights')">Highlights</button>
-</div>
-</div>-->
-
-<!-- Navigation bar-->
-<div class="w3-sidebar w3-black w3-bar-block" style="width:25%">
-<div class="tab">
-  <button class="clearfix w3-bar-item w3-button"onmouseover="lookUp(event,'Presentation')">Presentation</button>
-  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
-  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Vision')">Vision</button>  
-  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Skills')">Skills</button>
-  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Languages')">Languages</button>
-  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Experience')">Experience</button>
-  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Education')">Education</button>
-  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Highlights')">Highlights</button>
-</div>
-<div>
- 
-
-<script>
-function lookUp(evt, tab) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tab).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-
-
-<!-- Page Container -->
-
-<div style="margin-left:25%">
-
-<div class="w3-content w3-border w3-margin-top" style="max-width:1400px">
-    
-
-
-<!-- Picture -->
-<div id="Presentation" class="w3-container w3-black  w3-margin-bottomtabcontent">
-
-<img src="MarchiStefano_Bewerbungsphoto.jpg" 
-  onmouseover="unblur(this)" 
-  onmouseout="blur(this)" >
-</div>
-
-<script>
-function blur(x) {
-  x.style.filter = "blur(8px)";
-}
-function unblur(x) {
-  x.style.filter = "blur(0px)";
-}   
-</script>
-
-
-<!-- KeyCapabilities -->
-<div id="KeyCapabilities" class="w3-container w3-black w3-border-bottom tabcontent">
-
-  <ul>
-  <li> Expertise in systems engineering and requirements management </li>
-  <li> Ability to design system, hardware and software interfaces </li>
-  <li> Experience in modelling systems, software and controls </li>
-  <li> Expertise in supporting processes improvement and software maturity </li>
-  <li> Knowledge of system and software engineering reference models, standards and norms </li>        
-  </ul>
-</div>
-
-
-<!-- Vision -->
-<div id="Vision" class="w3-container w3-black w3-card-4 w3-border-bottom tabcontent">
-
-  <q><em>System engineering is a robust approach to the design, creation, and operation of systems. In simple terms, the approach consists of identification and quantification of system goals, creation of alternative system design concepts, performance of design trades, selection and implementation of the best design, verification that the design is properly built and integrated, and post-implementation assessment of how well the system meets the goals.</em></q>
-</div>
-
-
-<!-- Skills -->
-<div id="Skills" class="w3-container w3-black w3-border-bottom tabcontent">
-  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-  <br>  
-  <p>Requirements engineering and traceability (A-SPICE)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
-  </div>
-  <p>Systems architecture and interface design (INCOSE)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-  </div>
-  <p>Model Based Systems Engineering (MBSE)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-  </div>
-  <p>Tradespace analysis (INCOSE) and change request analysis </p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-  </div>
-  <p>Domain semantics and ontologies (INCOSE)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-  </div>
-  <br>  
-  <p>Functional safety and Safety by design (ISO26232)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80">80%</div>
-  </div> 
-  <p>FMEA and system theoretic process analysis (STPA)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
-  </div>
- <p>Cybersecurity (ISO21434)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30">30%</div>
-  </div>
-  <br>  
-  <p>Basis software and communication stacks (AUTOSAR)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-  </div>
-  <p>Computer science and detail design (AUTOSAR)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
-  </div>
- 
-</div>
-
-
-<!-- Languages -->
-<div id="Languages" class="w3-container w3-black w3-border-bottom tabcontent">
-
-  <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">  </i>Languages</b></p>
-  <br>  
-  <p>English</p>
-  <div class="w3-light-grey w3-round-xlarge">
-    <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-  </div>
-  <p>German</p>
-  <div class="w3-light-grey w3-round-xlarge">
-    <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
-  </div>
-  <p>Italian</p>
-  <div class="w3-light-grey w3-round-xlarge">
-    <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-  </div>
-<br>
-<br>
-
-  <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">  </i>Programming Languages</b></p>
-  <br>  
-  <p>C</p>
-  <div class="w3-light-grey w3-round-xlarge">
-    <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
-  </div>
-  <p>Pyton</p>
-  <div class="w3-light-grey w3-round-xlarge">
-    <div class="w3-round-xlarge w3-teal" style="height:24px;width:70%"></div>
-  </div>
-  <p>Matlab/Simulink</p>
-  <div class="w3-light-grey w3-round-xlarge">
-    <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-  </div>
-
-</div>
-
-<!-- Experience -->
-<div id="Experience" class="w3-container w3-black w3-border-bottom tabcontent">
-
-  <h2 class="w3-text-grey w3-padding-10"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-
-  </div>
-  <div class="w3-container">
-  <h5 class="w3-opacity"><b>Systems Engineer/ Huber Automotive </b></h5>
-  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-  <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-  <hr>
-  </div>
-  <div class="w3-container">
-  <h5 class="w3-opacity"><b>Systems Engineer/ Eberspaecher </b></h5>
-  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Jun 2019</h6>
-  <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-  <hr>
-  </div>
-  <div class="w3-container">
-  <h5 class="w3-opacity"><b>Systems Engineer/ DaVinci Engineering</b></h5>
-  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2014 - Dec 2017</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-
-</div>
-
-<!-- Education -->
-<div id="Education" class="w3-container w3-black w3-border-bottom tabcontent">
-
-  <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-  </div>
-  <div class="w3-container">
-  <h5 class="w3-opacity"><b>Avid reader of scientific papers and patents, online classes</b></h5>
-  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-  <p>Continuous learning</p>
-  <hr>
-  </div>
-  <div class="w3-container">
-  <h5 class="w3-opacity"><b>Milan Polytechnic</b></h5>
-  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2015</h6>
-  <p>Research Fellow - Power Electronics and Digital Signal Processing</p>
-  <hr>
-  </div>
-  <div class="w3-container">
-  <h5 class="w3-opacity"><b>Milan Polytechnic</b></h5>
-  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1991 - 1998</h6>
-  <p>Master Degree - Electrical Engineering</p><br>
-
-</div>
-
-<!-- Highlights -->
-<div id="Highlights" class="w3-container w3-black w3-border-bottom tabcontent">
-
-  <ul> 
-    <li> 5+ years in managing projects and direct reports </li>
-    <li> 10+ years in research and development </li>
-    <li> 5+ years in systems engineering and consulting </li>
-  </ul>
-  <br>
-  <ul>
-    <li> System engineer and software architect for vehicle systems and control units (ASIL-B/C) </li> 
-    <li> Design of the safety concept and derivation of the safety and software requirements for a hybrid electric vehicle, with focus on failure propagation modelling </li> 
-    <li> Design of a safety and software architecture for a gateway control unit, with focus on consistency and completeness at the interfaces </li> 
-    <li> Refinement of system and software requirements, and of the verification criteria for application and basis software requirements </li> 
-    <li> Technical project leader for a modular platform of climate control units  </li> 
-    <li> Managed and authored system requirements and architecture ensuring A-SPICE compliance  </li> 
-    <li> Supported the development of the technical safety concept and the allocation of safety requirements in the software and hardware architecture (ASIL-C)  </li> 
-    <li> Elicited model-based requirements for actuators and controls  </li> 
-    <li> Designed system and software interfaces  </li> 
-  </ul>
-  <p>
-  <br>
-  System engineer and software architect for vehicle systems and control units 
-  <br>
-  Developed a comprehensive hazard analysis for a hybrid recreational vehicle with reference to VDA and NHTSA recommendations for traction battery and regenerative braking systems, redefining assumptions for the specific use cases and mission profiles. Designed the safety concept with focus on error modelling and failure propagation (STPA) among system, hardware and software components, with detailed reverse engineering of the safety mechanisms of the subsystems. Designed the safety mechanisms for the hybrid control unit with focus on multipoint failures and diagnostic coverage requirements. 
-  <br>
-  Designed the software architecture for a gateway control unit, with focus on consistency and completeness at the external and internal interfaces, according to the INCOSE framework. Refined software requirements for AUTOSAR basis software services.
-  <br>
-  <br>
-  System architect for fail-operational electrical distribution systems for hybrid vehicles.
-  <br>
-  Led a team for the design of zonal distribution system, with focus on reliability and availability. Researched redundancy and adaptive safety mechanism for achieving the dependability goals. Technology scouting for hybrid capacitors for energy buffering, smart switches, bidirectional converters and microcontrollers.
-  <br>
-  Research and coordination of multi-physics modelling, simulation and validation of battery management system for 48V distribution systems. 
-  <br>
-  Participation in a European research project for autonomous pods.
-  <br>
-  <br>
-  Process re-engineering for the ECU programming and coding processes with special focus on software requirements and data architectures.
-  <br>
-  Design of software interfaces and data model for event logs for the ECU programming and coding for over 300 control unit types.
-  <br>
-  Deployed statistical methods for data discovery and introduced performance and availability metrics.
-  </p>
-</div>
-
-<!-- End Page Container -->
-</div>
-</div>
-
-<!-- Footer -->
-<div footer="w3-container w3-teal w3-border-bottom w3-center">
-
-  <p class="w3-teal">Find me on social media </p>
-  <a href="https://stefanomarchi.github.io">
-  <i class="w3-teal fa fa-home"></i></a> 
-  <a href="https://www.linkedin.com/in/stefanomarchi" target="_blank">
-  <i class="w3-teal fa-linkedin w3-hover-opacity"></i></a>
-  <a href="https://www.xing.com/profile/Stefano_Marchi6/cv" target="_blank" >
-  <i class="w3-teal fa fa-xing w3-hover-opacity"></i></a> 
-  <a href="https://www.researchgate.net/profile/Stefano_Marchi" target="_blank" >
-  <i class="w3-teal fa fa-facebook-official w3-hover-opacity"></i></a> 
-  <a href="mailto:stefano.marchi.i@gmail.com" target="_blank">
-  <i class="w3-teal fa fa-envelope w3-hover-opacity"></i></a> 
-</div>              
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
 
 <!-- Header -->
 <header class="w3-container w3-black w3-center w3-card-4">
@@ -445,6 +44,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <!-- Navigation bar-->
 <div class="w3-sidebar w3-black w3-card-4 w3-bar-block" style="width:25%">
 <div class="tab">
+  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Presentation')">Presentation</button>
   <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
   <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Vision')">Vision</button>
   <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Skills')">Skills</button>
@@ -492,8 +92,27 @@ function lookUp(evt, tab) {
 	<div style="margin-left:25%">
     <div class="w3-container w3-card-4 w3-black w3-border_top" style="max-width:1400px">
       
+<!-- Presentation -->
+<div id="Presentation" class="w3-container w3-black  w3-margin-bottomtabcontent">
+
+<img src="MarchiStefano_Bewerbungsphoto.jpg" 
+  onmouseover="unblur(this)" 
+  onmouseout="blur(this)" >
+</div>
+
+<script>
+function blur(x) {
+  x.style.filter = "blur(8px)";
+}
+function unblur(x) {
+  x.style.filter = "blur(0px)";
+}   
+</script>
+
 <!-- KeyCapabilities -->
 <div id="KeyCapabilities" class="w3-container w3-black w3-border-bottom tabcontent">
+  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Key Capabilities</b></p>
+  <br>  
 
   <ul>
   <li> Expertise in systems engineering and requirements management </li>
@@ -506,6 +125,8 @@ function lookUp(evt, tab) {
 
 <!-- Vision -->
 <div id="Vision" class="w3-container w3-black w3-card-4 w3-border-bottom tabcontent">
+  <p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Vision</b></p>
+  <br>  
 
   <q><em>System engineering is a robust approach to the design, creation, and operation of systems. In simple terms, the approach consists of identification and quantification of system goals, creation of alternative system design concepts, performance of design trades, selection and implementation of the best design, verification that the design is properly built and integrated, and post-implementation assessment of how well the system meets the goals.</em></q>
 </div>
@@ -515,8 +136,8 @@ function lookUp(evt, tab) {
 
 <!-- Skills -->
 <div id="Skills" class="w3-container w3-black w3-border-bottom tabcontent">
-  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-  <br>  
+
+  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Systems Engineering</b></p>
   <p>Requirements engineering and traceability (A-SPICE)</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
@@ -537,7 +158,9 @@ function lookUp(evt, tab) {
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
   </div>
-  <br>  
+  <br>
+
+  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Safety and Security</b></p>    
   <p>Functional safety and Safety by design (ISO26232)</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80">80%</div>
@@ -551,78 +174,88 @@ function lookUp(evt, tab) {
     <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30">30%</div>
   </div>
   <br>  
+  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Computer Science</b></p>  
   <p>Basis software and communication stacks (AUTOSAR)</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
   </div>
-  <p>Computer science and detail design (AUTOSAR)</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
-  </div>
- 
+
+<p>Computer science and detail design (AUTOSAR)</p>
+<div class="w3-light-grey w3-round-xlarge w3-small">
+<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%
 </div>
+</div>
+
+<!-- End Skills--> 
 <br>
+</div>
 <br>
 
 <!-- Languages -->
 <div id="Languages" class="w3-container w3-black w3-border-bottom tabcontent">
 
-<p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">  </i>Languages</b></p>
-<br>  
+<p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">  </i>Languages</b></p>
+
 <p>English</p>
-<div class="w3-light-grey w3-round-xlarge">
-<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%">
+<div class="w3-light-grey w3-round-xlarge w3-small">
+<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">C2
 </div>
 </div>
-  
+
 <p>German</p>
-<div class="w3-light-grey w3-round-xlarge">
-<div class="w3-round-xlarge w3-teal" style="height:24px;width:80%">
-</div>  
+<div class="w3-light-grey w3-round-xlarge w3-small">
+<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">C1
+</div>
 </div>
 
 <p>Italian</p>
-<div class="w3-light-grey w3-round-xlarge">
-<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%">
+<div class="w3-light-grey w3-round-xlarge w3-small">
+<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">C2
 </div>
 </div>
-<br>
-<br>
+
 
 <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">  </i>Programming Languages</b></p>
-<br>  
-<p>C</p>
-<div class="w3-light-grey w3-round-xlarge">
-<div class="w3-round-xlarge w3-teal" style="height:24px;width:80%">
+
+<p>Embedded (C,MISRA-C)</p>
+<div class="w3-light-grey w3-round-xlarge w3-small">
+<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%
 </div>
 </div>
   
-<p>Pyton</p>
-<div class="w3-light-grey w3-round-xlarge">
-<div class="w3-round-xlarge w3-teal" style="height:24px;width:70%">
-</div>
-</div>
-  
-<p>Matlab/Simulink</p>
-<div class="w3-light-grey w3-round-xlarge">
-<div class="w3-round-xlarge w3-teal" style="height:24px;width:90%">
+<p>Simulation (Matlab/Simulink)</p>
+<div class="w3-light-grey w3-round-xlarge w3-small">
+<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%
 </div>
 </div>
 
-</br>
+<p>AI (Pyton/Tensorflow) </p>
+<div class="w3-light-grey w3-round-xlarge w3-small">
+<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%
 </div>
+</div>
+ 
+<p>Scripting (VBA, JavaScript)</p>
+<div class="w3-light-grey w3-round-xlarge w3-small">
+<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%
+</div>
+</div>
+
+<!-- End Languages -->
+<br>
+</div>
+<br>
 
 <!-- Experience -->
 <div id="Experience" class="w3-container w3-black w3-border-bottom tabcontent">
 
-<h2 class="w3-text-grey w3-padding-10"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+<p class="w3-large"><b><i class="fa fa-suitcase fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Work Experience</b></p>  
 
 <div class="w3-container">
 <h5 class="w3-opacity"><b>Systems Engineer/ Huber Automotive </b></h5>
 <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
   <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
 </div>
-
 <br>
 
 <div class="w3-container">
@@ -637,46 +270,76 @@ function lookUp(evt, tab) {
 <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2014 - Dec 2017</h6>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
 </div>
-
+<!-- End Experience -->
 <br>
 </div>
-
+<br>
 
 <!-- Education -->
 <div id="Education" class="w3-container w3-black w3-border-bottom tabcontent">
 
-<h2 class="w3-text-grey"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+<p class="w3-large"><b><i class="fa fa-certificate fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Education</b></p>  
 
 <div class="w3-container">
 <h5 class="w3-opacity"><b>Avid reader of scientific papers and patents, online classes</b></h5>
 <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
 <p>Continuous learning</p>
 </div>
+<br>
   
 <div class="w3-container">
 <h5 class="w3-opacity"><b>Milan Polytechnic</b></h5>
 <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2015</h6>
 <p>Research Fellow - Power Electronics and Digital Signal Processing</p>
-<hr>
 </div>
- 
+<br>
+
 <div class="w3-container">
 <h5 class="w3-opacity"><b>Milan Polytechnic</b></h5>
 <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1991 - 1998</h6>
-<p>Master Degree - Electrical Engineering</p><br>
+<p>Master Degree - Electrical Engineering</p>
 </div>
-
+<!-- End Education -->
 <br>
 </div>
+<br>
 
-    <!-- End Right Column -->
-    </div> 
-    </div>
+<!-- Highlights -->
+<div id="Highlights" class="w3-container w3-black w3-border-bottom tabcontent">
+
+  <ul> 
+    <li> 5+ years in managing projects and direct reports </li>
+    <li> 10+ years in research and development </li>
+    <li> 5+ years in systems engineering and consulting </li>
+  </ul>
+  <br>
+  <ul>
+    <li> System engineer and software architect for vehicle systems and control units (ASIL-B/C) </li> 
+    <li> Design of the safety concept and derivation of the safety and software requirements for a hybrid electric vehicle, with focus on failure propagation modelling </li> 
+    <li> Design of a safety and software architecture for a gateway control unit, with focus on consistency and completeness at the interfaces </li> 
+    <li> Refinement of system and software requirements, and of the verification criteria for application and basis software requirements </li> 
+    <li> Technical project leader for a modular platform of climate control units  </li> 
+    <li> Managed and authored system requirements and architecture ensuring A-SPICE compliance  </li> 
+    <li> Supported the development of the technical safety concept and the allocation of safety requirements in the software and hardware architecture (ASIL-C)  </li> 
+    <li> Elicited model-based requirements for actuators and controls  </li> 
+    <li> Designed system and software interfaces  </li> 
+  </ul>
+  <br>
+
+<!-- End Highlights -->
+<br>
+</div>
+<br>
+
+<!-- End Right Column -->
+</div> 
+</div>
       
-  <!-- End Page Container -->
+<!-- End Page Container -->
 </div>
 </div>
 
+<!-- Footer -->
 <footer class="w3-container w3-teal w3-center w3-margin-bottom">
   <p>Find me on social media.</p>
   <a href="https://www.researchgate.net/profile/Stefano_Marchi" target="_blank" >
@@ -695,10 +358,8 @@ function lookUp(evt, tab) {
   <i class="w3-teal fa fa-envelope w3-hover-opacity"></i></a> 
   <br>
   <br>
- 
+<!-- End Footer -->
 </footer>
 
 </body>
 </html>
-
-
