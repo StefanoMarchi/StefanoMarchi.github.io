@@ -40,7 +40,6 @@ img {
 <!-- Navigation bar-->
 <div class="w3-sidebar w3-black w3-border-right w3-bar-block" style=230px">
 <div class="tab">
-  <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Presentation')">Presentation</button>
   <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'KeyCapabilities')">KeyCapabilities</button>
   <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Vision')">Vision</button>
   <button class="clearfix w3-bar-item w3-button" onmouseover="lookUp(event,'Skills')">Skills</button>
@@ -72,16 +71,41 @@ function lookUp(evt, tab) {
 <div style="margin-left:230px">
 <div class="w3-container w3-black w3-border_top" style="max-width:1400px">
       
-<!-- Presentation -->
-<div id="Presentation" class="w3-container w3-black tabcontent">
+<!-- KeyCapabilities -->
+<div id="KeyCapabilities" class="w3-container w3-black tabcontent">
 
 <div class="w3-display-container"> 
-<img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:50%; max-width:300px" alt="Profile Picture"
+<img src="MarchiStefano_Bewerbungsphoto.jpg" style="width:40%; max-width:250px" alt="Profile Picture"
   onmouseover="unblur(this)" 
   onmouseout="blur(this)" 
   onclick="blur(this)" 
+  
+
+  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Presentation</b></p>
+  <br>  
+    <br>  
+    <li> Solid background in higher mathematics and statistical methods </li>
+    <li> Intellectual and logical rigour combined with the strong ethical standards  </li>     
+    <li> Avid reader of patents, technical papers and software code  </li>     
+    <br>  
+  
+
+  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Key Capabilities</b></p>
+  <br>  
+  <ul>
+    <li> Proven leadership in systems engineering roles  </li>
+    <li> Experience in supporting processes improvement and software maturity </li>
+    <br>                                                                                     
+    <li> Expertise in systems and software engineering, from concept to detail design  </li>
+    <li> Ability to design systems, software and hardware interfaces  </li>
+    <li> Experience in modelling systems, software and controls </li>
+    <li> Experience in modelling use-cases and mission profiles  </li>
+    <li> Knowledge of engineering reference models, standards and norms  </li>
+  </ul>
+
 </div>
-<!-- End Presentation -->
+<!-- End KeyCapabilities -->
+<br>  
 </div>
 
 <script>
@@ -93,28 +117,6 @@ function unblur(x) {
 }   
 </script>
 
-<!-- KeyCapabilities -->
-<div id="KeyCapabilities" class="w3-container w3-black tabcontent">
-  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Key Capabilities</b></p>
-  <br>  
-
-  <ul>
-    <li> Proven leadership in systems engineering roles  </li>
-    <li> Experience in supporting processes improvement and software maturity </li>
-    <br>                                                                                     
-    <li> Expertise in systems and software engineering, from concept to detail design  </li>
-    <li> Ability to design systems, software and hardware interfaces  </li>
-    <li> Experience in modelling systems, software and controls </li>
-    <li> Experience in modelling use-cases and mission profiles  </li>
-    <li> Knowledge of engineering reference models, standards and norms  </li>
-    <br>  
-    <li> Solid background in higher mathematics and statistical methods </li>
-    <li> Avid reader of patents, technical papers and software code  </li>
-        
-  </ul>
-<!-- End KeyCapabilities -->
-<br>  
-</div>
 
 <!-- Vision -->
 <div id="Vision" class="w3-container w3-black tabcontent">
